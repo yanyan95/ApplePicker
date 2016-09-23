@@ -193,6 +193,8 @@ GameObject:
   m_Component:
   - 224: {fileID: 453164765}
   - 222: {fileID: 453164767}
+  - 114: {fileID: 453164768}
+  - 132: {fileID: 453164769}
   - 114: {fileID: 453164766}
   m_Layer: 5
   m_Name: HighScore
@@ -258,6 +260,40 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 453164764}
+--- !u!114 &453164768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 453164764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7f6f278c2c3fac44b1d8166e1c4745d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!132 &453164769
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 453164764}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: High Score:1000
+  m_Anchor: 0
+  m_Alignment: 0
+  m_PixelOffset: {x: 10, y: -6}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 0}
+  m_Material: {fileID: 0}
+  m_FontSize: 24
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1 &523721908
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,6 +397,7 @@ MonoBehaviour:
   numBaskets: 3
   basketBottomY: -14
   basketSpacingY: 2
+  basketList: []
 --- !u!1 &1067226010
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,7 +589,8 @@ GameObject:
   m_Component:
   - 224: {fileID: 1809725910}
   - 222: {fileID: 1809725912}
-  - 114: {fileID: 1809725911}
+  - 132: {fileID: 1809725911}
+  - 114: {fileID: 1809725913}
   m_Layer: 5
   m_Name: ScoreCounter
   m_TagString: Untagged
@@ -578,7 +616,36 @@ RectTransform:
   m_AnchoredPosition: {x: -400, y: 50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1809725911
+--- !u!132 &1809725911
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1809725909}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: 1000
+  m_Anchor: 0
+  m_Alignment: 0
+  m_PixelOffset: {x: -10, y: -6}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 0}
+  m_Material: {fileID: 0}
+  m_FontSize: 24
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!222 &1809725912
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1809725909}
+--- !u!114 &1809725913
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -611,9 +678,3 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 1000
---- !u!222 &1809725912
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1809725909}
